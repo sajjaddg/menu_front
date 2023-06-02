@@ -19,7 +19,7 @@ const FilterBar = () => {
                 modules={[FreeMode]}
             >
                 <SwiperSlide >
-                    <FilterButton label={'دسته ssssssبندی'} />
+                    <FilterButton label={'دسته'} />
                 </SwiperSlide>
                 <SwiperSlide>
                     <FilterButton label={'برگر'} />
@@ -47,7 +47,6 @@ const FilterBar = () => {
                 </SwiperSlide>
             </Swiper>
         </div>
-
     )
 }
 
