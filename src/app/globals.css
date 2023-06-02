@@ -16,12 +16,26 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: "shabnam-Bold";
+  src: url("../assets/fonts/shabnam/Shabnam-Bold.ttf");
+}
+@font-face {
+  font-family: "shabnam";
+  src: url("../assets/fonts/shabnam/Shabnam.ttf");
+}
+@font-face {
+  font-family: "shabnam-light";
+  src: url("../assets/fonts/shabnam/Shabnam-Light.ttf");
+}
+@font-face {
+  font-family: "shabnam-medium";
+  src: url("../assets/fonts/shabnam/Shabnam-Medium.ttf");
+}
+@font-face {
+  font-family: "shabnam-thin";
+  src: url("../assets/fonts/shabnam/Shabnam-Thin.ttf");
+}
+.main{
+  direction: rtl;
 }
