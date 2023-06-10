@@ -1,16 +1,16 @@
 'use clinet';
 import { useMemo } from "react";
 import Skeleton from "react-loading-skeleton";
-interface FilterButtonProps {
+interface AdditivesButtonProps {
     id: number;
     label: string;
-    loading?: boolean;
-    active: number | null;
+    loading: boolean;
+    active: number[];
     onPress: (id: number) => void;
 }
 
-const FilterButton = ({ label, loading, active, onPress, id }: FilterButtonProps) => {
-    const isActive = useMemo(() => active === null ? false : active === id, [active, id])
+const AdditivesButton = ({ label, loading, active, onPress, id }: AdditivesButtonProps) => {
+    const isActive = useMemo(() => active === null ? false : active.includes(id), [active, id])
 
     if (loading)
         return <Skeleton width={90} height={32} borderRadius={16} style={{ marginRight: 4 }} />
@@ -22,4 +22,4 @@ const FilterButton = ({ label, loading, active, onPress, id }: FilterButtonProps
     )
 }
 
-export default FilterButton
+export default AdditivesButton

@@ -15,7 +15,7 @@ export default function SearchBar() {
         <div className="flex flex-row items-center gap-2">
             <div onClick={handleClick} className="flex bg-additional-5  items-center rounded-lg flex-1">
                 <input
-                    className="outline-none bg-additional-5 text-additional-3 w-full text-lg font-Shabnam text-right placeholder:text-additional-4 px-3"
+                    className="outline-none bg-additional-5 text-additional-3 w-full text-lg font-shabnam text-right placeholder:text-additional-4 px-3"
                     placeholder="چی میل دارید؟"
                     ref={inputRef}
                     onBlur={() => setDesabled(true)}

@@ -1,0 +1,680 @@
+{
+  "foods": [
+    {
+      "id": 1,
+      "title": "پیتزا مخصوص",
+      "rate": "4.2",
+      "discount": 15,
+      "price": 75000,
+      "picture": "https://example.com/pizza_makhsoos.jpg",
+      "category": 2
+    },
+    {
+      "id": 2,
+      "title": "برگر گوشت مخصوص",
+      "rate": "4.5",
+      "discount": 0,
+      "price": 90000,
+      "picture": "https://example.com/burger_makhsoos.jpg",
+      "category": 1
+    },
+    {
+      "id": 3,
+      "title": "ساندویچ مرغ و آووکادو",
+      "rate": "4.1",
+      "discount": 5,
+      "price": 80000,
+      "picture": "https://example.com/sandwich_moraba.jpg",
+      "category": 3
+    },
+    {
+      "id": 4,
+      "title": "پیتزا پپرونی",
+      "rate": "4.4",
+      "discount": 10,
+      "price": 115000,
+      "picture": "https://example.com/pizza_pepperoni.jpg",
+      "category": 2
+    },
+    {
+      "id": 5,
+      "title": "پیتزا سبزیجات",
+      "rate": "4.4",
+      "discount": 0,
+      "price": 120000,
+      "picture": "https://example.com/pizza_sabzijat.jpg",
+      "category": 2
+    },
+    {
+      "id": 6,
+      "title": "ساندویچ تن ماهی",
+      "rate": "4.2",
+      "discount": 15,
+      "price": 75000,
+      "picture": "https://example.com/sandwich_ton_mahi.jpg",
+      "category": 3
+    },
+    {
+      "id": 7,
+      "title": "برگر مرغ",
+      "rate": "4.0",
+      "discount": 0,
+      "price": 135000,
+      "picture": "https://example.com/burger_moraba.jpg",
+      "category": 1
+    },
+    {
+      "id": 8,
+      "title": "همبرگر با پنیر",
+      "rate": "4.5",
+      "discount": 10,
+      "price": 110000,
+      "picture": "https://example.com/hamburger_ba_panir.jpg",
+      "category": 1
+    },
+    {
+      "id": 9,
+      "title": "ساندویچ گوشت گوسفندی",
+      "rate": "4.6",
+      "discount": 0,
+      "price": 100000,
+      "picture": "https://example.com/sandwich_goosht_gosfandi.jpg",
+      "category": 3
+    },
+    {
+      "id": 10,
+      "title": "پیتزا مارگاریتا",
+      "rate": "4.5",
+      "discount": 15,
+      "price": 110000,
+      "picture": "https://example.com/pizza_margarita.jpg",
+      "category": 2
+    },
+    {
+      "id": 11,
+      "title": "ساندویچ ترکی",
+      "rate": "4.2",
+      "discount": 5,
+      "price": 90000,
+      "picture": "https://example.com/sandwich_torshi.jpg",
+      "category": 3
+    },
+    {
+      "id": 12,
+      "title": "برگر بزرگ",
+      "rate": "4.3",
+      "discount": 10,
+      "price": 85000,
+      "picture": "https://example.com/burger_bozorg.jpg",
+      "category": 1
+    },
+    {
+      "id": 13,
+      "title": "پیتزا مخلوط",
+      "rate": "4.6",
+      "discount": 5,
+      "price": 100000,
+      "picture": "https://example.com/pizza_mokhalleto.jpg",
+      "category": 2
+    },
+    {
+      "id": 14,
+      "title": "ساندویچ مرغ و پنیر",
+      "rate": "4.4",
+      "discount": 0,
+      "price": 120000,
+      "picture": "https://example.com/sandwich_moraba_panir.jpg",
+      "category": 3
+    },
+    {
+      "id": 15,
+      "title": "برگر کوچک",
+      "rate": "4.3",
+      "discount": 15,
+      "price": 95000,
+      "picture": "https://example.com/burger_koochak.jpg",
+      "category": 1
+    },
+    {
+      "id": 16,
+      "title": "پیتزا سوسیس",
+      "rate": "4.2",
+      "discount": 0,
+      "price": 80000,
+      "picture": "https://example.com/pizza_sosis.jpg",
+      "category": 2
+    },
+    {
+      "id": 17,
+      "title": "ساندویچ شیرین",
+      "rate": "4.5",
+      "discount": 5,
+      "price": 90000,
+      "picture": "https://example.com/sandwich_shirin.jpg",
+      "category": 3
+    },
+    {
+      "id": 18,
+      "title": "برگر دوبل",
+      "rate": "4.3",
+      "discount": 10,
+      "price": 85000,
+      "picture": "https://example.com/burger_double.jpg",
+      "category": 1
+    },
+    {
+      "id": 19,
+      "title": "پیتزا گوشت",
+      "rate": "4.6",
+      "discount": 5,
+      "price": 100000,
+      "picture": "https://example.com/pizza_goosht.jpg",
+      "category": 2
+    },
+    {
+      "id": 20,
+      "title": "ساندویچ مرغ سالاد",
+      "rate": "4.3",
+      "discount": 15,
+      "price": 95000,
+      "picture": "https://example.com/sandwich_moraba_salad.jpg",
+      "category": 3
+    }
+  ],
+  "sliders": [
+    {
+      "id": 1,
+      "title": "تخفیف های ویژه",
+      "foods": [
+        {
+          "id": 20,
+          "title": "ساندویچ مرغ سالاد",
+          "rate": "4.3",
+          "discount": 15,
+          "price": 95000,
+          "picture": "https://example.com/sandwich_moraba_salad.jpg",
+          "category": 3
+        },
+        {
+          "id": 19,
+          "title": "پیتزا گوشت",
+          "rate": "4.6",
+          "discount": 5,
+          "price": 100000,
+          "picture": "https://example.com/pizza_goosht.jpg",
+          "category": 2
+        },
+        {
+          "id": 18,
+          "title": "برگر دوبل",
+          "rate": "4.3",
+          "discount": 10,
+          "price": 85000,
+          "picture": "https://example.com/burger_double.jpg",
+          "category": 1
+        },
+        {
+          "id": 17,
+          "title": "ساندویچ شیرین",
+          "rate": "4.5",
+          "discount": 5,
+          "price": 90000,
+          "picture": "https://example.com/sandwich_shirin.jpg",
+          "category": 3
+        },
+        {
+          "id": 15,
+          "title": "برگر کوچک",
+          "rate": "4.3",
+          "discount": 15,
+          "price": 95000,
+          "picture": "https://example.com/burger_koochak.jpg",
+          "category": 1
+        },
+        {
+          "id": 13,
+          "title": "پیتزا مخلوط",
+          "rate": "4.6",
+          "discount": 5,
+          "price": 100000,
+          "picture": "https://example.com/pizza_mokhalleto.jpg",
+          "category": 2
+        },
+        {
+          "id": 12,
+          "title": "برگر بزرگ",
+          "rate": "4.3",
+          "discount": 10,
+          "price": 85000,
+          "picture": "https://example.com/burger_bozorg.jpg",
+          "category": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "محبوب ترین ها",
+      "foods": [
+        {
+          "id": 12,
+          "title": "برگر بزرگ",
+          "rate": "4.3",
+          "discount": 10,
+          "price": 85000,
+          "picture": "https://example.com/burger_bozorg.jpg",
+          "category": 1
+        },
+        {
+          "id": 18,
+          "title": "برگر دوبل",
+          "rate": "4.3",
+          "discount": 10,
+          "price": 85000,
+          "picture": "https://example.com/burger_double.jpg",
+          "category": 1
+        },
+        {
+          "id": 5,
+          "title": "پیتزا سبزیجات",
+          "rate": "4.4",
+          "discount": 0,
+          "price": 120000,
+          "picture": "https://example.com/pizza_sabzijat.jpg",
+          "category": 2
+        },
+        {
+          "id": 16,
+          "title": "پیتزا سوسیس",
+          "rate": "4.2",
+          "discount": 0,
+          "price": 80000,
+          "picture": "https://example.com/pizza_sosis.jpg",
+          "category": 2
+        },
+        {
+          "id": 11,
+          "title": "ساندویچ ترکی",
+          "rate": "4.2",
+          "discount": 5,
+          "price": 90000,
+          "picture": "https://example.com/sandwich_torshi.jpg",
+          "category": 3
+        },
+        {
+          "id": 20,
+          "title": "ساندویچ مرغ سالاد",
+          "rate": "4.3",
+          "discount": 15,
+          "price": 95000,
+          "picture": "https://example.com/sandwich_moraba_salad.jpg",
+          "category": 3
+        },
+        {
+          "id": 5,
+          "title": "پیتزا سبزیجات",
+          "rate": "4.4",
+          "discount": 0,
+          "price": 120000,
+          "picture": "https://example.com/pizza_sabzijat.jpg",
+          "category": 2
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "پیشنهاد ما",
+      "foods": [
+        {
+          "id": 1,
+          "title": "پیتزا مخصوص",
+          "rate": "4.2",
+          "discount": 15,
+          "price": 75000,
+          "picture": "https://example.com/pizza_makhsoos.jpg",
+          "category": 2
+        },
+        {
+          "id": 3,
+          "title": "ساندویچ مرغ و آووکادو",
+          "rate": "4.1",
+          "discount": 5,
+          "price": 80000,
+          "picture": "https://example.com/sandwich_moraba.jpg",
+          "category": 3
+        },
+        {
+          "id": 5,
+          "title": "پیتزا سبزیجات",
+          "rate": "4.4",
+          "discount": 0,
+          "price": 120000,
+          "picture": "https://example.com/pizza_sabzijat.jpg",
+          "category": 2
+        },
+        {
+          "id": 9,
+          "title": "ساندویچ گوشت گوسفندی",
+          "rate": "4.6",
+          "discount": 0,
+          "price": 100000,
+          "picture": "https://example.com/sandwich_goosht_gosfandi.jpg",
+          "category": 3
+        },
+        {
+          "id": 11,
+          "title": "ساندویچ ترکی",
+          "rate": "4.2",
+          "discount": 5,
+          "price": 90000,
+          "picture": "https://example.com/sandwich_torshi.jpg",
+          "category": 3
+        }
+      ]
+    }
+  ],
+  "profile": { "name": "لاویا" },
+  "cart": {},
+  "categories": [
+    {
+      "id": 1,
+      "title": "برگر"
+    },
+    {
+      "id": 2,
+      "title": "پیتزا"
+    },
+    {
+      "id": 3,
+      "title": "ساندویچ"
+    },
+    {
+      "id": 4,
+      "title": "نوشیدنی"
+    },
+    {
+      "id": 5,
+      "title": "پیش غذا"
+    }
+  ],
+  "additives": [
+    {
+      "id": 1,
+      "title": "سس مخصوص",
+      "price": 12000
+    },
+    {
+      "id": 2,
+      "title": "سس کلم",
+      "price": 14000
+    },
+    {
+      "id": 3,
+      "title": "سس تند",
+      "price": 8000
+    },
+    {
+      "id": 4,
+      "title": "سس قرمز",
+      "price": 8000
+    },
+    {
+      "id": 5,
+      "title": "سس خیار",
+      "price": 8000
+    },
+    {
+      "id": 6,
+      "title": "نون اضافه",
+      "price": 2000
+    }
+  ],
+  "food-detail": [
+    {
+      "id": 1,
+      "title": "پیتزا مخصوص",
+      "rate": "4.2",
+      "discount": 15,
+      "price": 75000,
+      "picture": "https://example.com/pizza_makhsoos.jpg",
+      "category": 2,
+      "type": [
+        {
+          "id": 1,
+          "addPrice": 15000,
+          "title": "تک نفره"
+        },
+        {
+          "id": 2,
+          "addPrice": 20000,
+          "title": "متوسط"
+        },
+        {
+          "id": 3,
+          "addPrice": 30000,
+          "title": "خانواده"
+        }
+      ],
+      "detail": "مواد استفاده شده: زیتون - فلفل دلمه - هویج - کرفس - گوجه - ذرت"
+    },
+    {
+      "id": 2,
+      "title": "برگر گوشت مخصوص",
+      "rate": "4.5",
+      "discount": 0,
+      "price": 90000,
+      "picture": "https://example.com/burger_makhsoos.jpg",
+      "category": 1,
+      "type": [
+        {
+          "id": 1,
+          "addPrice": 0,
+          "title": "عادی"
+        },
+        {
+          "id": 2,
+          "addPrice": 10000,
+          "title": "دبل"
+        }
+      ],
+      "detail": "مواد استفاده شده: گوشت چرخ‌کرده، پیاز، نمک و ادویه"
+    },
+    {
+      "id": 3,
+      "title": "ساندویچ مرغ و آووکادو",
+      "rate": "4.1",
+      "discount": 5,
+      "price": 80000,
+      "picture": "https://example.com/sandwich_moraba.jpg",
+      "category": 3,
+      "type": [
+        {
+          "id": 1,
+          "addPrice": 0,
+          "title": "عادی"
+        },
+        {
+          "id": 2,
+          "addPrice": 5000,
+          "title": "نیمه جدید"
+        }
+      ],
+      "detail": "این ساندویچ شامل مرغ، آووکادو، خیارشور، گوجه فرنگی و سس مخصوص است."
+    },
+    {
+      "id": 4,
+      "title": "پیتزا پپرونی",
+      "rate": "4.4",
+      "discount": 10,
+      "price": 115000,
+      "picture": "https://example.com/pizza_pepperoni.jpg",
+      "category": 2,
+      "type": [
+        {
+          "id": 1,
+          "addPrice": 0,
+          "title": "عادی"
+        },
+        {
+          "id": 2,
+          "addPrice": 10000,
+          "title": "دوبل"
+        }
+      ],
+      "detail": "مواد استفاده شده: آلبالو، پپرونی، قارچ، فلفل دلمه، ذرت و پنیر موتزارلا"
+    },
+    {
+      "id": 5,
+      "title": "پیتزا سبزیجات",
+      "rate": "4.4",
+      "discount": 0,
+      "price": 120000,
+      "picture": "https://example.com/pizza_sabzijat.jpg",
+      "category": 2,
+      "type": [
+        {
+          "id": 1,
+          "addPrice": 0,
+          "title": "عادی"
+        },
+        {
+          "id": 2,
+          "addPrice": 15000,
+          "title": "تک نفره"
+        }
+      ],
+      "detail": "مواد استفاده شده: پیاز، فلفل دلمه، ذرت، اسفناج، گوجه فرنگی و پنیر موتزارلا"
+    },
+    {
+      "id": 6,
+      "title": "ساندویچ تن ماهی",
+      "rate": "4.2",
+      "discount": 15,
+      "price": 75000,
+      "picture": "https://example.com/sandwich_ton_mahi.jpg",
+      "category": 3,
+      "type": [
+        {
+          "id": 1,
+          "addPrice": 0,
+          "title": "عادی"
+        },
+        {
+          "id": 2,
+          "addPrice": 5000,
+          "title": "نیمه جدید"
+        }
+      ],
+      "detail": "این ساندویچ شامل تن ماهی، خیارشور، سس مخصوص و گوجه فرنگی است."
+    },
+    {
+      "id": 7,
+      "title": "برگر مرغ",
+      "rate": "4.0",
+      "discount": 0,
+      "price": 135000,
+      "picture": "https://example.com/burger_moraba.jpg",
+      "category": 1,
+      "type": [
+        {
+          "id": 1,
+          "addPrice": 0,
+          "title": "عادی"
+        },
+        {
+          "id": 2,
+          "addPrice": 10000,
+          "title": "دبل"
+        }
+      ],
+      "detail": "مواد استفاده شده: گوشت مرغ، پنیر چدار، خیارشور و سس مخصوص"
+    },
+    {
+      "id": 8,
+      "title": "همبرگر با پنیر",
+      "rate": "4.5",
+      "discount": 10,
+      "price": 110000,
+      "picture": "https://example.com/hamburger_ba_panir.jpg",
+      "category": 1,
+      "type": [
+        {
+          "id": 1,
+          "addPrice": 0,
+          "title": "عادی"
+        },
+        {
+          "id": 2,
+          "addPrice": 10000,
+          "title": "دبل"
+        }
+      ],
+      "detail": "مواد استفاده شده: گوشت چرخ‌کرده، پنیر چدار، سس مایونز و سس کچاپ"
+    },
+    {
+      "id": 9,
+      "title": "ساندویچ گوشت گوسفندی",
+      "rate": "4.6",
+      "discount": 0,
+      "price": 100000,
+      "picture": "https://example.com/sandwich_goosht_gosfandi.jpg",
+      "category": 3,
+      "type": [
+        {
+          "id": 1,
+          "addPrice": 0,
+          "title": "عادی"
+        },
+        {
+          "id": 2,
+          "addPrice": 5000,
+          "title": "نیمه جدید"
+        }
+      ],
+      "detail": "مواد استفاده شده: گوشت گوسفندی، پیاز، خیارشور و سس مخصوص"
+    },
+    {
+      "id": 10,
+      "title": "پیتزا مارگاریتا",
+      "rate": "4.5",
+      "discount": 15,
+      "price": 110000,
+      "picture": "https://example.com/pizza_margarita.jpg",
+      "category": 2,
+      "type": [
+        {
+          "id": 1,
+          "addPrice": 0,
+          "title": "عادی"
+        },
+        {
+          "id": 2,
+          "addPrice": 10000,
+          "title": "دوبل"
+        }
+      ],
+      "detail": "مواد استفاده شده: گوجه فرنگی، پنیر موتزارلا، ریحان و روغن زیتون"
+    },
+    {
+      "id": 11,
+      "title": "ساندویچ ترکی",
+      "rate": "4.2",
+      "discount": 5,
+      "price": 90000,
+      "picture": "https://example.com/sandwich_torshi.jpg",
+      "category": 3,
+      "type": [
+        {
+          "id": 1,
+          "addPrice": 0,
+          "title": "عادی"
+        },
+        {
+          "id": 2,
+          "addPrice": 5000,
+          "title": "نیمه جدید"
+        }
+      ],
+      "detail": "این ساندویچ شامل گوشت ترکی، خیارشور، سس مایونز و سس کچاپ است."
+    }
+  ]
+}

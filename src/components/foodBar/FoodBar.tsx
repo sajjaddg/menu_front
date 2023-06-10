@@ -2,47 +2,35 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode } from "swiper";
-import "swiper/css";
 import FoodItem from './FoodItem';
+import "swiper/css";
+import { Food } from '@/types/data';
 
-const FoodBar = () => {
+interface FoodBarProps {
+    foods: Food[];
+}
+
+const FoodBar = ({ foods }: FoodBarProps) => {
+
     return (
-            <div>
-                <Swiper
-                    spaceBetween={4}
-                    slidesOffsetAfter={22}
-                    slidesOffsetBefore={22}
-                    slidesPerView={'auto'}
-                    freeMode={true}
-                    modules={[FreeMode]}
-                >
-                    <SwiperSlide >
-                        <FoodItem />
-                    </SwiperSlide>
-                    <SwiperSlide >
-                        <FoodItem />
-                    </SwiperSlide>
-                    <SwiperSlide >
-                        <FoodItem />
-                    </SwiperSlide>
-                    <SwiperSlide >
-                        <FoodItem />
-                    </SwiperSlide>
-                    <SwiperSlide >
-                        <FoodItem />
-                    </SwiperSlide>
-                    <SwiperSlide >
-                        <FoodItem />
-                    </SwiperSlide>
-                    <SwiperSlide >
-                        <FoodItem />
-                    </SwiperSlide>
-                    <SwiperSlide >
-                        <FoodItem />
-                    </SwiperSlide>
-
-                </Swiper>
-            </div>
+        <div>
+            <Swiper
+                spaceBetween={4}
+                slidesOffsetAfter={22}
+                slidesOffsetBefore={22}
+                slidesPerView={'auto'}
+                freeMode={true}
+                modules={[FreeMode]}
+            >
+                {
+                    foods.map(it =>
+                        <SwiperSlide key={it.id} >
+                            <FoodItem item={it} />
+                        </SwiperSlide>
+                    )
+                }
+            </Swiper>
+        </div>
     )
 }
 
