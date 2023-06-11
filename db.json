@@ -675,6 +675,209 @@
         }
       ],
       "detail": "این ساندویچ شامل گوشت ترکی، خیارشور، سس مایونز و سس کچاپ است."
+    },
+    {
+      "id": 12,
+      "title": "برگر بزرگ",
+      "rate": "4.3",
+      "discount": 10,
+      "price": 85000,
+      "picture": "https://example.com/burger_bozorg.jpg",
+      "category": 1,
+      "type": [
+        {
+          "id": 1,
+          "addPrice": 0,
+          "title": "عادی"
+        },
+        {
+          "id": 2,
+          "addPrice": 10000,
+          "title": "دبل"
+        }
+      ],
+      "detail": "مواد استفاده شده: گوشت چرخ‌کرده، پیاز، نمک و ادویه"
+    },
+    {
+      "id": 13,
+      "title": "پیتزا مخلوط",
+      "rate": "4.6",
+      "discount": 5,
+      "price": 100000,
+      "picture": "https://example.com/pizza_mokhalleto.jpg",
+      "category": 2,
+      "type": [
+        {
+          "id": 1,
+          "addPrice": 0,
+          "title": "عادی"
+        },
+        {
+          "id": 2,
+          "addPrice": 10000,
+          "title": "دوبل"
+        }
+      ],
+      "detail": "مواد استفاده شده: آلبالو، پپرونی، قارچ، فلفل دلمه، ذرت و پنیر موتزارلا"
+    },
+    {
+      "id": 14,
+      "title": "ساندویچ مرغ و پنیر",
+      "rate": "4.4",
+      "discount": 0,
+      "price": 120000,
+      "picture": "https://example.com/sandwich_moraba_panir.jpg",
+      "category": 3,
+      "type": [
+        {
+          "id": 1,
+          "addPrice": 0,
+          "title": "عادی"
+        },
+        {
+          "id": 2,
+          "addPrice": 5000,
+          "title": "نیمه جدید"
+        }
+      ],
+      "detail": "این ساندویچ شامل مرغ، پنیر، خیارشور، گوجه فرنگی و سس مخصوص است."
+    },
+    {
+      "id": 15,
+      "title": "برگر کوچک",
+      "rate": "4.3",
+      "discount": 15,
+      "price": 95000,
+      "picture": "https://example.com/burger_koochak.jpg",
+      "category": 1,
+      "type": [
+        {
+          "id": 1,
+          "addPrice": 0,
+          "title": "عادی"
+        },
+        {
+          "id": 2,
+          "addPrice": 10000,
+          "title": "دبل"
+        }
+      ],
+      "detail": "مواد استفاده شده: گوشت چرخ‌کرده، پیاز، نمک و ادویه"
+    },
+    {
+      "id": 16,
+      "title": "پیتزا سوسیس",
+      "rate": "4.2",
+      "discount": 0,
+      "price": 80000,
+      "picture": "https://example.com/pizza_sosis.jpg",
+      "category": 2,
+      "type": [
+        {
+          "id": 1,
+          "addPrice": 0,
+          "title": "عادی"
+        },
+        {
+          "id": 2,
+          "addPrice": 10000,
+          "title": "دبل"
+        }
+      ],
+      "detail": "مواد استفاده شده: گوشت چرخ‌کرده، پیاز، نمک و ادویه"
+    },
+    {
+      "id": 17,
+      "title": "ساندویچ شیرین",
+      "rate": "4.5",
+      "discount": 5,
+      "price": 90000,
+      "picture": "https://example.com/sandwich_shirin.jpg",
+      "category": 3,
+      "type": [
+        {
+          "id": 1,
+          "addPrice": 0,
+          "title": "عادی"
+        },
+        {
+          "id": 2,
+          "addPrice": 10000,
+          "title": "دبل"
+        }
+      ],
+      "detail": "مواد استفاده شده: گوشت چرخ‌کرده، پیاز، نمک و ادویه"
+    },
+    {
+      "id": 18,
+      "title": "برگر دوبل",
+      "rate": "4.3",
+      "discount": 10,
+      "price": 85000,
+      "picture": "https://example.com/burger_double.jpg",
+      "category": 1,
+      "type": [
+        {
+          "id": 1,
+          "addPrice": 0,
+          "title": "عادی"
+        },
+        {
+          "id": 2,
+          "addPrice": 10000,
+          "title": "دبل"
+        }
+      ],
+      "detail": "مواد استفاده شده: گوشت چرخ‌کرده، پیاز، نمک و ادویه"
+    },
+    {
+      "id": 19,
+      "title": "پیتزا گوشت",
+      "rate": "4.6",
+      "discount": 5,
+      "price": 100000,
+      "picture": "https://example.com/pizza_goosht.jpg",
+      "category": 2,
+      "type": [
+        {
+          "id": 1,
+          "addPrice": 0,
+          "title": "عادی"
+        },
+        {
+          "id": 2,
+          "addPrice": 10000,
+          "title": "بزرگ"
+        },
+        {
+          "id": 3,
+          "addPrice": 20000,
+          "title": "خیلی بزرگ"
+        }
+      ],
+      "detail": "مواد استفاده شده: گوشت چرخ‌کرده، پیاز، نمک و ادویه"
+    },
+    {
+      "id": 20,
+      "title": "ساندویچ مرغ سالاد",
+      "rate": "4.3",
+      "discount": 15,
+      "price": 95000,
+      "picture": "https://example.com/sandwich_moraba_salad.jpg",
+      "category": 3,
+      "type": [
+        {
+          "id": 1,
+          "addPrice": 0,
+          "title": "عادی"
+        },
+        {
+          "id": 2,
+          "addPrice": 10000,
+          "title": "دبل"
+        }
+      ],
+      "detail": "مواد استفاده شده: گوشت چرخ‌کرده، پیاز، نمک و ادویه"
     }
   ]
 }

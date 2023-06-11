@@ -13,7 +13,7 @@ export default function FoodLayout({
 }) {
     return (
         <html lang="fa" className='main'>
-            <body className='bg-background max-w-[480px] m-auto'>
+            <body className='bg-background max-w-[580px] m-auto'>
                 <Providers>
                     {children}
                 </Providers>

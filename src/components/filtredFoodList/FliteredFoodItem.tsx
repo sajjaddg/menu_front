@@ -1,19 +1,20 @@
 import { Food } from '@/types/data'
 import Image from 'next/image'
-import React, { useMemo } from 'react'
+import React, { useCallback, useMemo } from 'react'
 import Offer from '../Offer'
 import Rate from '../Rate'
+import { useRouter } from 'next/navigation'
 interface FliteredFoodItemProps {
     item: Food
 }
 
 const FliteredFoodItem = ({ item }: FliteredFoodItemProps) => {
-
+    const router = useRouter()
     const { discount, price, rate, title } = item ?? {}
     const newPrice = useMemo(() => discount !== 0 ? price * (100 - discount) / 100 : -1, [discount, price])
-
+    const onClick = useCallback(() => router.push(`/food/${item.id}`), [item.id, router])
     return (
-        <div className='bg-additional-5 rounded-[14px] gap-2 flex flex-row'>
+        <div className='bg-additional-5 rounded-[14px] gap-2 flex flex-row cursor-pointer'{...{ onClick }}>
             <div className='w-[180px] h-auto p-[2px]'>
                 <Image
                     src="/burger.png"

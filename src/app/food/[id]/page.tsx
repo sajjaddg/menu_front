@@ -4,6 +4,7 @@ import PriceDetail from '@/components/(foodDetail)/PriceDetail'
 import FoodTypeBar from '@/components/(foodDetail)/foodType/FoodTypeBar'
 import AdditivesBar from '@/components/additivesBar/AdditivesBar'
 import { getAdditives, getFoodDetail } from '@/services/api';
+import { useCart } from '@/utils/Context/CartContext';
 import { useQuery } from '@tanstack/react-query';
 import Image from 'next/image'
 import { useCallback, useMemo, useState } from 'react'
@@ -12,6 +13,7 @@ export default function FoodDetail({ params }: { params: { id: number } }) {
     const [activeAdd, setActiveAdd] = useState<number[]>([])
     const [activeType, setActiveType] = useState<number>(1)
     const [quantity, setQuantity] = useState<number>(1)
+    const { addItem, items } = useCart()
 
     const { id } = params
     const { data: additivesData, isLoading, isFetching } = useQuery({
@@ -40,16 +42,31 @@ export default function FoodDetail({ params }: { params: { id: number } }) {
     const { title, rate, discount, detail, price, type } = data ?? {}
 
     const finalPrice = useMemo(() => (price + (type?.[activeType - 1]?.addPrice || 0)) * quantity * (1 - discount / 100) + activeAdd.reduce((total, id) => total + (additivesData.find((additive: any) => additive.id === id)?.price || 0), 0), [price, quantity, discount, activeAdd, additivesData, type, activeType]);
+    const onSubmit = useCallback(() => {
+        const item = {
+            id: items.length,
+            foodId:id,
+            title,
+            type: type?.[activeType - 1]?.title,
+            add: additivesData?.filter((it: any) => activeAdd.includes(it.id)),
+            price: (price + type?.[activeType - 1]?.addPrice || 0) * (1 - discount / 100),
+            quantity
+        }
+        addItem(item)
+        setActiveAdd([])
+        setActiveType(1)
+        setQuantity(1)
+        alert("raft sabad kharid :)")
 
-
+    }, [activeAdd, activeType, addItem, additivesData, discount, items.length, price, quantity, title, type])
 
     return (
         <div className="h-screen flex flex-col">
             <div className='flex justify-center items-center -mt-8'>
                 <Image
                     src="/food.png"
-                    width={500}
-                    height={500}
+                    width={600}
+                    height={600}
                     alt="Picture of the author"
                     unoptimized
                 />
@@ -70,7 +87,7 @@ export default function FoodDetail({ params }: { params: { id: number } }) {
                     <div>
                         <div className='flex flex-col px-7 gap-2 justify-center pb-12'>
                             <PriceDetail price={finalPrice ?? 0} {...{ quantity, setQuantity }} />
-                            <div className='flex items-center justify-center py-3 bg-primary-1 rounded-lg font-shabnamMedium text-additional-5'>
+                            <div onClick={onSubmit} className='flex items-center justify-center py-3 bg-primary-1 rounded-lg font-shabnamMedium text-additional-5 cursor-pointer'>
                                 افزودن به سبد خرید
                             </div>
                         </div>

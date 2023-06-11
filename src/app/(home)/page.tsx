@@ -15,7 +15,7 @@ export default function Home() {
   })
 
   const { filter } = useFilter()
-
+ 
   return (
     <>
       <div className='flex flex-col space-y-[32px] pb-[32px] pt-[16px]'>

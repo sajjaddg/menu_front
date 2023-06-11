@@ -1,7 +1,7 @@
 import { Food, Slider } from "@/types/data"
 import axios from "axios"
 
-const url = 'http://localhost:3001/'
+const url = 'http://menu-backend-json-sever.vercel.app/'
 
 const getProfile = async () => {
     const { data } = await axios.get(url + 'profile')
