@@ -24,7 +24,6 @@ export default function TitleBar() {
                             width={80}
                             height={80}
                             alt="Picture of the author"
-                            unoptimized
                         />
                     </div>
             }

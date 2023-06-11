@@ -58,7 +58,7 @@ export default function FoodDetail({ params }: { params: { id: number } }) {
         setQuantity(1)
         alert("raft sabad kharid :)")
 
-    }, [activeAdd, activeType, addItem, additivesData, discount, items.length, price, quantity, title, type])
+    }, [activeAdd, activeType, addItem, additivesData, discount, id, items.length, price, quantity, title, type])
 
     return (
         <div className="h-screen flex flex-col">
@@ -68,7 +68,6 @@ export default function FoodDetail({ params }: { params: { id: number } }) {
                     width={600}
                     height={600}
                     alt="Picture of the author"
-                    unoptimized
                 />
             </div>
             <div className="bg-background h-screen -mt-12  z-10 rounded-t-3xl shadow-md flex flex-col pt-6">

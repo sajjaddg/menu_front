@@ -23,7 +23,6 @@ const FoodItem = ({ item }: FoodItemProps) => {
                     width={1000}
                     height={1000}
                     alt="Picture of the author"
-                    unoptimized
                 />
                 <div className="flex flex-row items-center justify-between absolute top-0 left-0 p-[8px] w-full">
                     <div>{discount !== 0 && <Offer label={discount} />}</div>

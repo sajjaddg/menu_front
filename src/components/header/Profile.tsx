@@ -10,7 +10,6 @@ export default function Profile() {
                 width={900}
                 height={900}
                 alt="Picture of the author"
-                unoptimized
             />
         </div>
     )
