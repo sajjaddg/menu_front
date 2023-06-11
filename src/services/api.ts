@@ -1,7 +1,7 @@
 import { Food, Slider } from "@/types/data"
 import axios from "axios"
 
-const url = 'https://menu-backend-json-sever.vercel.app/'
+const url = 'https://apiman.bahooacademy.top/'
 
 const getProfile = async () => {
     const { data } = await axios.get(url + 'profile')
