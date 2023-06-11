@@ -78,7 +78,7 @@ export default function FoodDetail({ params }: { params: { id: number } }) {
                             <FoodTypeBar onPressItem={onPressTypeItem} active={activeType} {...{ type, price }} />
                             <span className='pt-4 font-shabnam text-additional-1 text-[16px]'>{detail}</span>
                         </div>
-                        <div className='pt-16 gap-4 flex flex-col'>
+                        <div className='pt-10 gap-4 flex flex-col'>
                             <span className='font-shabnamBold text-[20px] text-additional-1 px-5'>افزودنی ها</span>
                             <AdditivesBar onPress={onPressAddItem} active={activeAdd} data={additivesData} {...{ loading }} />
                         </div>
